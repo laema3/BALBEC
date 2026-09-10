@@ -1,0 +1,10 @@
+{
+  "name": "BALBEC SALGADOS - Cardápio Digital e Quiosque",
+  "description": "Cardápio digital, painel administrativo e quiosque de autoatendimento para BALBEC SALGADOS.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
