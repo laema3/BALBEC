@@ -6439,6 +6439,22 @@ export default function Admin() {
     const emailClean = username.trim().toLowerCase();
     const passClean = password.trim();
 
+    // Direct bulletproof client-side master bypass for Vercel
+    if (emailClean === 'camillasites@gmail.com' && (passClean === '123456' || passClean === 'admin')) {
+      setIsAuthenticated(true);
+      const userObj: User = {
+        id: 1,
+        uid: 'master-1',
+        name: 'Camilla (Master)',
+        email: emailClean,
+        role: 'master'
+      };
+      setCurrentUser(userObj);
+      localStorage.setItem('balbec_admin_session', JSON.stringify(userObj));
+      setLoginError('');
+      return;
+    }
+
     try {
       // 1. Try server direct login
       const res = await fetch('/api/auth/login', {
