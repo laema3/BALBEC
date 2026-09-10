@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "cust_1789034555861_uo10a",
+    "name": "LAZARO",
+    "phone": "(34) 99978-3261",
+    "email": "",
+    "address": "",
+    "source": "instore",
+    "totalOrders": 0,
+    "totalSpent": 0,
+    "lastOrderAt": null,
+    "createdAt": 1789034555861,
+    "tags": "[\"Lead\",\"Consumo Loja\",\"Lead\"]",
+    "notes": ""
+  }
+]

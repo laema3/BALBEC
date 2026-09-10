@@ -1,4 +1,5 @@
-import app from '../server.ts';
 import serverless from 'serverless-http';
+const app = require('../dist/server.cjs');
 
-export default serverless(app);
+export default serverless(app.default || app);
+

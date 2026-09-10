@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "id": "cat-paes",
+    "name": "Pães",
+    "order": 1,
+    "externalId": null,
+    "isVisible": true,
+    "availableForDelivery": true,
+    "availableInStore": true,
+    "availableForKiosk": true
+  },
+  {
+    "id": "cat-salgados",
+    "name": "Salgados",
+    "order": 2,
+    "externalId": null,
+    "isVisible": true,
+    "availableForDelivery": true,
+    "availableInStore": true,
+    "availableForKiosk": true
+  },
+  {
+    "id": "cat-doces",
+    "name": "Doces & Confeitaria",
+    "order": 3,
+    "externalId": null,
+    "isVisible": true,
+    "availableForDelivery": true,
+    "availableInStore": true,
+    "availableForKiosk": true
+  },
+  {
+    "id": "cat-cafes",
+    "name": "Cafés & Matinais",
+    "order": 4,
+    "externalId": null,
+    "isVisible": true,
+    "availableForDelivery": true,
+    "availableInStore": true,
+    "availableForKiosk": true
+  },
+  {
+    "id": "cat-bebidas",
+    "name": "Bebidas",
+    "order": 5,
+    "externalId": null,
+    "isVisible": true,
+    "availableForDelivery": true,
+    "availableInStore": true,
+    "availableForKiosk": true
+  }
+]

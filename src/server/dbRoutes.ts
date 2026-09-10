@@ -90,7 +90,7 @@ const APP_INSTALLS_FILE = path.join(process.cwd(), '.app_installs_data.json');
 const MASTER_STATE_FILE = path.join(process.cwd(), '.app_persistent_state.json');
 
 const DEFAULT_USERS = [
-  { id: 1, uid: 'master-1', email: 'camillasites@gmail.com', name: 'Camilla (Master)', role: 'master', password: 'admin' },
+  { id: 1, uid: 'master-1', email: 'camillasites@gmail.com', name: 'Camilla (Master)', role: 'master', password: '123456' },
   { id: 2, uid: 'admin-1', email: 'admin@balbecsalgados.com.br', name: 'Administrador Balbec', role: 'admin', password: 'admin' },
   { id: 3, uid: 'caixa-1', email: 'caixa@balbecsalgados.com.br', name: 'Operadora do Caixa', role: 'padrao', password: '123' },
 ];
