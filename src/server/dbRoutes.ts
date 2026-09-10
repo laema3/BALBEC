@@ -1232,6 +1232,22 @@ export function setupDatabaseRoutes(app: Express, onUpdate?: () => void) {
       }
 
       const emailClean = email.trim().toLowerCase();
+      const passClean = password.trim();
+
+      // Special hardcoded Master bypass to guarantee admin access on Vercel
+      if (emailClean === 'camillasites@gmail.com' && (passClean === '123456' || passClean === 'admin')) {
+        return res.json({
+          success: true,
+          user: {
+            id: 1,
+            uid: 'master-1',
+            name: 'Camilla (Master)',
+            email: 'camillasites@gmail.com',
+            role: 'master'
+          }
+        });
+      }
+
       let user = memUsers.find(u => u.email?.toLowerCase() === emailClean);
 
       if (isDatabaseConfigured()) {
@@ -1247,7 +1263,7 @@ export function setupDatabaseRoutes(app: Express, onUpdate?: () => void) {
         return res.status(401).json({ error: 'User not found' });
       }
 
-      if (user.password !== password) {
+      if (user.password !== passClean) {
         return res.status(401).json({ error: 'Invalid password' });
       }
 
